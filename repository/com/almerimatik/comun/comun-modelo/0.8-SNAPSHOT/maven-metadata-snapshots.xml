@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<metadata>
+  <groupId>com.almerimatik.comun</groupId>
+  <artifactId>comun-modelo</artifactId>
+  <version>0.8-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <buildNumber>33</buildNumber>
+      <timestamp>20121106.123852</timestamp>
+    </snapshot>
+    <lastUpdated>20121106123852</lastUpdated>
+  </versioning>
+</metadata>

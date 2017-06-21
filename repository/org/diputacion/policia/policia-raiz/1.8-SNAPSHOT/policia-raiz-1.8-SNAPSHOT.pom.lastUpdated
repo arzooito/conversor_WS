@@ -1,0 +1,4 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Thu Jun 01 09:50:25 CEST 2017
+file\:${project.basedir}/lib/.error=
+file\:${project.basedir}/lib/.lastUpdated=1496303425460

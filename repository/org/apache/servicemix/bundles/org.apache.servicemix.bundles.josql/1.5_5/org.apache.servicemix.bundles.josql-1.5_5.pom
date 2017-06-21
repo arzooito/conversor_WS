@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <artifactId>bundles-pom</artifactId>
+    <groupId>org.apache.servicemix.bundles</groupId>
+    <version>6</version>
+    <relativePath>../bundles-pom/pom.xml</relativePath>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.servicemix.bundles</groupId>
+  <artifactId>org.apache.servicemix.bundles.josql</artifactId>
+  <packaging>bundle</packaging>
+  <name>Apache ServiceMix :: Bundles :: ${pkgArtifactId}</name>
+  <version>1.5_5</version>
+  <description>This OSGi bundle wraps ${pkgArtifactId} ${pkgVersion} jar file.</description>
+  <scm>
+    <connection>scm:svn:http://svn.apache.org/repos/asf/servicemix/smx4/bundles/tags/org.apache.servicemix.bundles.josql-1.5_5</connection>
+    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/servicemix/smx4/bundles/tags/org.apache.servicemix.bundles.josql-1.5_5</developerConnection>
+    <url>http://svn.apache.org/viewvc/servicemix/smx4/bundles/tags/org.apache.servicemix.bundles.josql-1.5_5</url>
+  </scm>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-shade-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+            <configuration>
+              <artifactSet>
+                <includes>
+                  <include>${pkgGroupId}:${pkgArtifactId}</include>
+                </includes>
+              </artifactSet>
+              <filters>
+                <filter>
+                  <artifact>${pkgGroupId}:${pkgArtifactId}</artifact>
+                  <excludes>
+                    <exclude>**</exclude>
+                  </excludes>
+                </filter>
+              </filters>
+              <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
+              <createDependencyReducedPom>true</createDependencyReducedPom>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <repositories>
+    <repository>
+      <releases />
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>open.iona.m2</id>
+      <name>IONA Open Source Community Release Repository</name>
+      <url>http://repo.open.iona.com/maven2</url>
+    </repository>
+  </repositories>
+  <properties>
+    <pkgVersion>1.5</pkgVersion>
+    <servicemix.osgi.import.pkg>!org.josql*,
+            com.gentlyweb*;resolution:=optional, 
+            gnu.regexp*;resolution:=optional,
+            javax.servlet*;resolution:=optional,
+            javax.swing*;resolution:=optional,
+            net.sf.jasperreports*;resolution:=optional,
+            org.apache.oro*;resolution:=optional,
+            org.apache.regexp*;resolution:=optional,
+            org.apache.tools.ant*;resolution:=optional,
+            org.jfree.data*;resolution:=optional,
+            *</servicemix.osgi.import.pkg>
+    <servicemix.osgi.export.pkg>org.josql</servicemix.osgi.export.pkg>
+    <pkgArtifactId>josql</pkgArtifactId>
+    <pkgGroupId>net.sf.josql</pkgGroupId>
+  </properties>
+</project>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>policia-raiz</artifactId>
+        <groupId>org.diputacion.policia</groupId>
+        <version>1.8-SNAPSHOT</version>
+    </parent>
+    <artifactId>policia-ui</artifactId>
+    <name>policia-ui</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zhtml</artifactId>
+            <version>${zk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>selectbox</artifactId>
+            <version>0.9.0</version>
+<!--            <scope>system</scope>
+            <systemPath>${basedir}/src/main/resources/selectbox-0.8.0.jar</systemPath>-->
+            <!--<optional>true</optional>-->
+        </dependency>
+        <dependency>
+            <groupId>org.zkoss.swifttab</groupId>
+            <artifactId>swifttab</artifactId>
+            <version>0.9.0</version>
+            <!--<optional>true</optional>-->
+<!--            <scope>system</scope>
+            <systemPath>${basedir}/src/main/resources/swifttab-0.8.0.jar</systemPath>-->
+        </dependency>
+    </dependencies>
+</project>

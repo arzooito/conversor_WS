@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.zkoss.zkforge.el</groupId>
+  <artifactId>zcommons-el</artifactId>
+  <version>1.1.0</version>
+  <packaging>jar</packaging>
+  <name>ZK Commons EL</name>
+  <url>http://www.zkoss.org</url>
+  <description>ZK Commons EL</description>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 1.1</name>
+      <url>http://www.apache.org/licenses/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+	<developers>
+		<developer>
+			<id>zkteam</id>
+			<name>ZK Team</name>
+			<email>info@zkoss.org</email>
+			<url>http://www.zkoss.org</url>
+			<organization>Potix</organization>
+			<organizationUrl>http://www.zkoss.org</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>8</timezone>
+			<properties>
+				<picUrl>http://www.zkoss.org</picUrl>
+			</properties>
+		</developer>
+	</developers>
+  <scm>
+    <url>http://zkforge.svn.sourceforge.net/viewvc/zkforge/trunk/zcommons-el</url>
+  </scm>
+</project> 
